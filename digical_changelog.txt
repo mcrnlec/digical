@@ -1,0 +1,78 @@
+Plugin for defining multi day events
+_______________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
+<p>Version 1.1
+31.10.2025.
+Description:
+	- data saved to table wppw_digical_venues (wppw depending on Wordpress database prefix so table nem is prefix_digical_venues)
+	- table fields
+		- id
+		- type
+		- name
+		- address
+		- parent_id
+	- created Venues section
+	- Data entry form
+		- Venue type
+			- Primary -> primary Venue data as it can have sub-venues (hotel and confference rooms in it)
+				- in table marked as bold
+			- Sub-venue -> a section within primary venue (like conference hall)
+		- Vanue name
+		- Venue address
+		- Save button
+		- created venues table
+			- multi checkbox to enable actions on multiple items
+				- if two or more items are selected two options will appears
+					- Delete selected
+					- Cancel Selection
+			- table auto sorted by primary alphabeticaly
+				- secondary sort is to match primarys sub-venues -> primary is followd by all sub-venues and just than next primary is in order
+		- Edit button
+			- allows in-place edit within table
+			- if primary address is changed, sub-venue will auto update
+			- is sub-venue address is changed, primary and other sub-venues will not be updated
+		- Delete button	
+			- deletes only record in a row where it it placed
+			- for the time if we delete primary, it is not deleting sub-venues
+_</p>______________________________________________________________________________________________________________________
+<p>Version: 1.0
+Change date: 31.10.2025
+Description:
+	- data saved to table wppw_digical_days (wppw depending on Wordpress database prefix so table nem is prefix_digical_days)
+		- table fields
+			- id
+			- date
+			- start_time
+			- end_time
+	- initial menu and submenu created
+	- day entry defined
+		- day entry form ddmmyyyy
+			- transformed in table and menu to dd.mm.YYYY
+		- automatically assigning day name based on date
+	- start time and end time entry defined
+		- can be entered like h (example 8)
+			- it is transforemd to 8:00
+		- can be entered like 8:15
+			- displayed like 8:15
+	- Save Day button
+		- saves entry to database, assigning unique ID to each DB entry
+		- creates record in table below and submenu in Days menu in form dd.mm.YYYY
+	- Edit button
+		- Editing entries in place within the table
+		- Auto update on table and submenu
+	- Delete button	
+		- deletes record (row) from frontend, DB entry and removes submenu entry
+	- Checkboxes
+		- once two or more items have been checked, a button "Delete elected" appears above the table
+			- deletes selected rows, entries for selected rows in DB and removes submenu entries
+	- Configure day button
+		- leads to each days separate configuration page
+		- URL slug defined by day ID in table
+	- Side menu
+		- Menus defined	
+			- General
+			- Days
+				- created days as submenu
+			- Venues
+			- Speakers
+</p>
