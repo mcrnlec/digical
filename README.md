@@ -2,12 +2,12 @@
 
 DigiCal is a WordPress plugin for managing multi-day conferences with venues, speakers, and session scheduling, built for a modern, inline-editing admin workflow and a future-proof frontend.
 
-- **Current baseline:** v1.6 (10 Nov 2025)
-- **Next milestone:** v1.7 — Frontend Shortcodes & Filterable Agenda
+- **Current baseline:** v1.7 (10 Nov 2025)
+- **Next milestone:** v1.8 — Frontend Shortcodes & Filterable Agenda
 
 ---
 
-## Features (v1.6)
+## Features (v1.7)
 
 ### Days & Day Plans
 - DB-backed (no CSV), inline add/edit/delete
